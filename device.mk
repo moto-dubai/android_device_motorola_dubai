@@ -45,6 +45,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     DubaiCameraService
 
+# Dolby
+$(call inherit-product, hardware/motorola/dolby/setup.mk)
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.dubai
